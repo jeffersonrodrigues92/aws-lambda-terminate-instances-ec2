@@ -1,8 +1,8 @@
-package br.com.monitor.stop.ec2.handler;
+package br.com.monitor.terminate.ec2.handler;
 
 
 
-import br.com.monitor.stop.ec2.response.MonitorResponse;
+import br.com.monitor.terminate.ec2.response.MonitorResponse;
 import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.ec2.AmazonEC2;
 import com.amazonaws.services.ec2.AmazonEC2ClientBuilder;
@@ -14,15 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class StopEC2Handler implements RequestHandler<Map<String,Object>, MonitorResponse> {
+public class TerminateEC2Handler implements RequestHandler<Map<String,Object>, MonitorResponse> {
 
     private final static String AMI_ID = "ami-03295f3eb51971483";
-
-    public static void main (String args []) {
-
-        new StopEC2Handler().handleRequest(null, null);
-
-    }
 
     public MonitorResponse handleRequest(Map<String, Object> input, Context context) {
 

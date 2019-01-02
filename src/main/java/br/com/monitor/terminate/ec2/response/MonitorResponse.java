@@ -1,4 +1,4 @@
-package br.com.monitor.stop.ec2.response;
+package br.com.monitor.terminate.ec2.response;
 
 import com.amazonaws.services.ec2.model.InstanceStateChange;
 import com.amazonaws.services.ec2.model.Reservation;
