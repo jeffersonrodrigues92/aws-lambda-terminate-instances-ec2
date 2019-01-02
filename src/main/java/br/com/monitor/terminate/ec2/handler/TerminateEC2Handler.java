@@ -16,7 +16,7 @@ import java.util.Map;
 
 public class TerminateEC2Handler implements RequestHandler<Map<String,Object>, MonitorResponse> {
 
-    private final static String AMI_ID = "ami-03295f3eb51971483";
+    private final static String AMI_ID = "{YOUR_AMI_ID}";
 
     public MonitorResponse handleRequest(Map<String, Object> input, Context context) {
 
